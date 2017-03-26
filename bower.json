@@ -1,0 +1,21 @@
+{
+  "name": "ng-image-load",
+  "description": "image load for angularjs",
+  "main": "ng-image-load.js",
+  "authors": [
+    "Abhijit Nair <nairabhijit6@gmail.com> (https://github.com/nairabhijit)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angularjs",
+    "imageload"
+  ],
+  "homepage": "https://github.com/nairabhijit/ng-image-load.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

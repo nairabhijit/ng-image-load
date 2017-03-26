@@ -1,0 +1,23 @@
+{
+  "name": "ng-image-load",
+  "version": "1.0.0",
+  "description": "image load for angularjs",
+  "main": "ng-image-load.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nairabhijit/ng-image-load.git"
+  },
+  "keywords": [
+    "angularjs",
+    "imageload"
+  ],
+  "author": "Abhijit Nair <nairabhijit6@gmail.com> (https://github.com/nairabhijit)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nairabhijit/ng-image-load/issues"
+  },
+  "homepage": "https://github.com/nairabhijit/ng-image-load#readme"
+}
