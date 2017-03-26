@@ -57,7 +57,7 @@ Preload images in your application before browser encounter them
     // preload image
     myApp
         .config(function(NgImageLoadServiceProvider) {
-                NgImageLoadServiceProvider.preloadImages({
+                NgImageLoadServiceProvider.preloadImage({
                     url: 'image_path'
                 });
         });
@@ -134,6 +134,10 @@ fetching images in application manually
             }
         });
 ```
+
+# CONS
+- Can be used only with **img** element
+- ng-repeat haven't taken into consideration
 
 # Contribution
 
