@@ -40,14 +40,16 @@ function ngImageLoadDirective(NgImageLoadService) {
             defaultImageUrl: '@'
         },
         link: function(scope, element, attrs) {
-            var isImageLoaded = false;
-            getDefaultImage();
             var imageUrl = scope.ngImageLoad;
+            var isImageLoaded = false;
+            _process(imageUrl);
 
-            if(imageUrl) {
-                _loadImage(imageUrl);
+            function _process(url) {
+                getDefaultImage();
+                if(url) {
+                    _loadImage(url);
+                }
             }
-
             function getDefaultImage() {
                 var promise;
                 if(scope.defaultImageUrl) {
@@ -80,6 +82,10 @@ function ngImageLoadDirective(NgImageLoadService) {
             function _updateImage(url) {
                 element.attr('src', url);
             }
+            attrs.$observe('ngImageLoad', function(value) {
+                isImageLoaded = false;
+                _process(value);
+            });
         }
     };
 }

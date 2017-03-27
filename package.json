@@ -1,6 +1,6 @@
 {
   "name": "ng-image-load",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "image load for angularjs",
   "main": "ng-image-load.js",
   "scripts": {
